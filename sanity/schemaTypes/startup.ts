@@ -10,7 +10,10 @@ export const startup = defineType({
       name: "title",
       type: "string",
     }),
-
+    defineField({
+      name: "views",
+      type: "number",
+    }),
     defineField({
       name: "slug",
       type: "slug",
@@ -18,7 +21,6 @@ export const startup = defineType({
         source: "title",
       },
     }),
-
     defineField({
       name: "author",
       type: "reference",

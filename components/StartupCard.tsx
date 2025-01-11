@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import { Author, Startup } from "@/sanity/types";
 import { author } from "@/sanity/schemaTypes/author";
 
-export type StartupTypeCard =Omit<Startup, "author"> & {author?:Author};
+export type StartupTypeCard = Omit<Startup, "author" | "views"> & { author?: Author; views?: number };
 
 const StartupCard = ({post}:{post:StartupTypeCard}) => {
 
