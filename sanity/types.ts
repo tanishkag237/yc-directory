@@ -130,7 +130,6 @@ export type Startup = {
   _type: "startup";
   _createdAt: string;
   _updatedAt: string;
-  views?: number;
   _rev: string;
   title?: string;
   slug?: Slug;
